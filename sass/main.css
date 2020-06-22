@@ -15,6 +15,10 @@ body {
   src: url(./fonts/YekanBakhMedium.woff);
 }
 
+.plus {
+  margin: auto auto;
+}
+
 .container {
   width: 600px;
   height: 920px;
@@ -68,6 +72,47 @@ body {
   height: 20%;
   border-bottom: 1px solid #c6c6c6;
   margin: 3px 20px;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.items-box-img {
+  height: 95%;
+  width: 23%;
+}
+
+.items-box-img-i {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.items-box-text {
+  height: 95%;
+  width: 48%;
+}
+
+.items-box-text-h1 {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.items-box-text-h1-gheymat {
+  font-size: 20px;
+  font-family: yekanBakh;
+  font-weight: 800;
+  margin-right: 6px;
+  margin-top: 5px;
+}
+
+.items-box-gheymat {
+  height: 95%;
+  width: 23%;
+  background-color: #a7a6a6;
+  margin-right: 25px;
 }
 
 .items-box:last-child {
@@ -81,6 +126,8 @@ body {
   height: 18%;
   background-color: #ffffff;
   z-index: -200;
+  -webkit-box-shadow: -5px 5px 3px rgba(255, 255, 255, 0.5);
+          box-shadow: -5px 5px 3px rgba(255, 255, 255, 0.5);
 }
 
 .bill-right-box {
@@ -90,7 +137,85 @@ body {
 
 .bill-left-box {
   width: 50%;
-  border-right: #969494 1px solid;
   margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bill-left-box-input {
+  position: relative;
+  margin-top: 20px;
+}
+
+.bill-left-box-input-i {
+  width: 270px;
+  height: 40px;
+  border-radius: 22.8px;
+  border: solid 1.2px #e67e22;
+  margin-bottom: 10px;
+}
+
+.bill-left-box-input-i::-webkit-input-placeholder {
+  font-family: YekanBakh;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgba(230, 126, 34, 0.71);
+}
+
+.bill-left-box-input-i:-ms-input-placeholder {
+  font-family: YekanBakh;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgba(230, 126, 34, 0.71);
+}
+
+.bill-left-box-input-i::-ms-input-placeholder {
+  font-family: YekanBakh;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgba(230, 126, 34, 0.71);
+}
+
+.bill-left-box-input-i::placeholder {
+  font-family: YekanBakh;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgba(230, 126, 34, 0.71);
+}
+
+.bill-left-box-input-click {
+  position: absolute;
+  top: -5px;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.bill-left-box-button {
+  font-family: YekanBakh;
+  width: 270px;
+  height: 62px;
+  border-radius: 11.7px;
+  background-color: #e67e22;
+  color: #ffffff;
+  outline: none;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  font-stretch: normal;
+  font-style: normal;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=main.css.map */

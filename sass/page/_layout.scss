@@ -31,10 +31,49 @@
         height: 20%;
         border-bottom: 1px solid #c6c6c6;
         margin: 3px 20px;
+        position: relative;
+        flex-direction: row;
+
+        &-img{
+            height: 95%;
+            width: 23%;    
+            &-i{
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
+        }
+
+        &-text{
+            height: 95%;
+            width: 48%;
+            
+            &-h1{
+                margin-top: 5px;
+                margin-right: 5px;
+                &-gheymat{
+                    font-size: 20px;
+                    font-family: yekanBakh;
+                    font-weight: 800;
+                    margin-right: 6px;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+    
+        &-gheymat{
+            height: 95%;
+            width: 23%;
+            background-color: #a7a6a6;
+            margin-right: 25px;
+        }
+
     }
     &-box:last-child{
         border-bottom: none;
     }
+
 }
 
 .bill{
@@ -42,13 +81,60 @@
     height: 18%;
     background-color: #ffffff;
     z-index: -200;
+    box-shadow: -5px 5px 3px rgba(255, 255, 255, 0.5);
     &-right-box{
         width: 50%;
         margin: 15px 0;
     }
     &-left-box{
         width: 50%;
-        border-right: #969494 1px solid;
         margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+
+        &-input{
+            position: relative;
+            margin-top: 20px;
+            
+            &-i{
+                width: 270px;
+                height: 40px;
+                border-radius: 22.8px;
+                border: solid 1.2px #e67e22;
+                margin-bottom: 10px;
+                &::placeholder{
+                    font-family: YekanBakh;
+                    font-size: 20px;
+                    text-align: right;
+                    padding-right: 20px;
+                    color: rgba(230, 126, 34, 0.71);
+                }
+            }
+            &-click{
+                position: absolute;
+                top: -5px;
+                left:18px;
+                width: 50px;
+                height: 50px;
+                border-radius:50%;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        &-button{
+            font-family: YekanBakh;
+            width: 270px;
+            height: 62px;
+            border-radius: 11.7px;
+            background-color: #e67e22;
+            color: #ffffff;
+            outline: none;
+            font-size: 25px;
+            font-weight: bold;
+            border: none;
+            font-stretch: normal;
+            font-style: normal;
+            margin-top:5px ;
+        }
     }
 }
