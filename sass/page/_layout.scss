@@ -4,7 +4,6 @@
   border-radius: 36.3px;
   border: solid 7px rgba(241, 196, 15, 0.5);
   margin: 52px auto ;
-  display: flex;
   flex-direction: column;
 }
 .header{
@@ -13,6 +12,7 @@
     background-color: #ffffff;
     z-index: -300;
     box-shadow:  0px 3px 10px 0px rgb(223, 215, 215);
+    border-radius:36.3px 36.3px 0 0 ;
     &-text{
         font-size: 22px;
         color: #000000;
@@ -22,7 +22,8 @@
 }
 .items{
     display: flex;
-    z-index: -333;
+    z-index: -100;
+    box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.11);
     height: 75%;
     background-color: #f0f0f0;
     flex-direction: column;
@@ -46,7 +47,7 @@
 
         &-text{
             height: 95%;
-            width: 48%;
+            width: 44%;
             
             &-h1{
                 margin-top: 5px;
@@ -57,16 +58,54 @@
                     font-weight: 800;
                     margin-right: 6px;
                     margin-top: 5px;
-                }
+                }             
             }
-
+            &-click{
+                width: 30%;
+                height: 40%;
+                margin-right: 15px;
+                position: relative;
+                &-increase{
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    top: 10px;
+                    left: -40px;
+                    cursor: pointer;
+                }
+                &-decrease{
+                    position: absolute;
+                    top: 35px;
+                    left: -40px;
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+                &-count{
+                    font-size: 25px;
+                    font-family: yekanBakh;
+                    position: absolute;
+                    top: 11px;
+                    right: 0;
+                    color: #000000;
+                }
+            }      
         }
     
         &-gheymat{
             height: 95%;
-            width: 23%;
-            background-color: #a7a6a6;
+            width: 27%;
             margin-right: 25px;
+            display: flex;
+            flex-direction: column-reverse ;
+            &-s{
+                font-size: 22px;
+                font-family: YekanBakh;
+                font-weight: bold;
+                letter-spacing: normal;
+                text-align: center;
+                color: #000000;
+            }
         }
 
     }
@@ -80,11 +119,44 @@
     display: flex;
     height: 18%;
     background-color: #ffffff;
-    z-index: -200;
+    z-index: 1000;
     box-shadow: -5px 5px 3px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    border-radius:0 0 36.3px 36.3px ;
     &-right-box{
         width: 50%;
-        margin: 15px 0;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        &-r{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            
+            &-h{
+                font-size: 17px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.71);
+                font-family: YekanBakh;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+        }
+        &-l{
+            width: 48%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            &-s{
+                font-size: 15px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.71);
+                font-family: YekanBakh;
+                font-weight: bold; 
+                margin-top: 10px;
+            }
+        }
     }
     &-left-box{
         width: 50%;
@@ -102,6 +174,11 @@
                 border-radius: 22.8px;
                 border: solid 1.2px #e67e22;
                 margin-bottom: 10px;
+                z-index: 10000;
+                font-size: 20px;
+                font-family: YekanBakh;
+                outline: none;
+                text-align: center;
                 &::placeholder{
                     font-family: YekanBakh;
                     font-size: 20px;
@@ -135,6 +212,21 @@
             font-stretch: normal;
             font-style: normal;
             margin-top:5px ;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(230, 126, 34, 0.71);
+            }
         }
     }
+}
+.final-price{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.856);
+    font-family: YekanBakh;
+    font-weight: bold; 
+    margin-top: 10px;
 }
