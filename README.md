@@ -1,4 +1,4 @@
 
-Bill-Generator with jquery
+Bill-Generator 
 
 https://mhmdndri.github.io/Bill-Generator/
